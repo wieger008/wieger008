@@ -1,5 +1,7 @@
 # Examenvoorbereiding Windows Server Beheer - Brandpunten
 
+Aparte gpo voot computer en user maken.
+
 ## 1. Cloudlink Aanmaken (Snelkoppeling op bureaublad)
 * **Waarom:** Automatische snelkoppeling naar de cloud-applicatie voor gebruikers.
 * **Pad op de Server:** User Configuration > Preferences > Windows Settings > Shortcuts
