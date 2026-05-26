@@ -24,6 +24,10 @@ Aparte gpo voot computer en user maken.
 **Examen-code:** B1-K2 (Beheert de infrastructuur)  
 **Doel:** Alle brandpunten blindelings uitvoeren binnen 3 uur.
 
+	1.	gpresult /r (op de client):
+•	Ga naar een client PC in de OU Doetinchem.
+•	Open CMD en typ gpresult /r.
+
 🚀 Examen-Cockpit (KitHub)
 1. De "GPO-Zoekmachine" (Tabel)
 Dit is je belangrijkste sectie. Als je de opdracht ziet, kijk je hier direct in.
