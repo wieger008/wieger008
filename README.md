@@ -22,6 +22,30 @@
 **Examen-code:** B1-K2 (Beheert de infrastructuur)  
 **Doel:** Alle brandpunten blindelings uitvoeren binnen 3 uur.
 
+🚀 Examen-Cockpit (KitHub)
+1. De "GPO-Zoekmachine" (Tabel)
+Dit is je belangrijkste sectie. Als je de opdracht ziet, kijk je hier direct in.
+Doel	Config-Pad (Snelweg)	Zoekterm (Filter)
+Cloudlink	User > Preferences > Shortcuts	N.v.t. (Preferences)
+USB-Sticks	Computer > Admin Templates > System	Removable
+Wachtwoord	Computer > Windows Settings > Security Settings	N.v.t. (Handmatig)
+CMD	User > Admin Templates > System	Command prompt
+Registry	User > Admin Templates > System	Registry
+Scherm	User > Admin Templates > Control Panel	Screen saver
+Store	User > Admin Templates > Windows Components	Store
+2. De "Panic-Button" (Checklist als het faalt)
+Als een instelling niet werkt, loop deze drie stappen in deze volgorde af:
+	1.	Forceer: Open CMD (Admin) op de client -> gpupdate /force
+	2.	Resultaat: Typ gpresult /r -> Staat jouw GPO bij "Applied Group Policy Objects"? Zo nee: Link is fout.
+	3.	Sessie: Log uit en log opnieuw in. (Geen discussie, dit is 90% van de gevallen de oplossing).
+3. PerfMon "Snelheid-Kneep"
+Zet dit in een apart blokje, want dit vergeet je onder stress:
+•	Pad: PerfMon > Groene + > Kies counters.
+•	De Schaal: Rechtsklik grafiek > Properties > Data
+•	Bytes Total/sec: 0.0001
+•	Current Bandwidth: 0.000001
+•	Druk op OK. Als de lijnen nog plat zijn, check je schaal opnieuw!
+
 ---
 
 ## 🖥️ Deel 1: Windows Server & Active Directory (W2)
